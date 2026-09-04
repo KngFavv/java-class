@@ -8,7 +8,7 @@ public class RockPaperScissors {
     public static void main(String[] args) {
 
         while(true){
-            
+
             int num = userInput();
             theGame(num);
 
