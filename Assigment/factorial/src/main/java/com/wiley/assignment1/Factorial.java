@@ -34,10 +34,12 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
+		 //get the input from user
 		 Scanner scanner = new Scanner(System.in);
 		 String scan = scanner.nextLine();
 		 int num = Integer.parseInt(scan);
 
+		 //check if user input is only in bounds from 1 to 10
 		 if(num >= 1 && num <= 10){
 			 return num;
 		 }
@@ -66,6 +68,8 @@ public class Factorial {
 		int result = 1;
 
 		//YOUR CODE STARTS HERE
+
+		 //a for loop to increase i by one each time it loops and times it by the prev number
 		 for(int i = 1; i < num + 1; i++){
 			 result = result * i;
 		 }
