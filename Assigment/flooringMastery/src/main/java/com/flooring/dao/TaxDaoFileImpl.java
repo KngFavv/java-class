@@ -12,7 +12,7 @@ import java.util.*;
 public class TaxDaoFileImpl implements TaxDao {
 
     private Map<String, Tax> allTaxes;
-    private  String TAX_FILE = "Data/Taxes.txt";
+    private  String TAX_FILE = "Data/Data/Taxes.txt";
     private  String DELIMITER = ",";
 
     public TaxDaoFileImpl() {

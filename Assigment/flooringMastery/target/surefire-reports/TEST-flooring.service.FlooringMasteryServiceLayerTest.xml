@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="flooring.service.FlooringMasteryServiceLayerTest" time="0.02" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="flooring.service.FlooringMasteryServiceLayerTest" time="0.019" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\faigb\AppData\Local\Temp\surefire10304531549501070930\surefirebooter-20260920122233524_3.jar C:\Users\faigb\AppData\Local\Temp\surefire10304531549501070930 2026-09-20T12-22-33_418-jvmRun1 surefire-20260920122233524_1tmp surefire_0-20260920122233524_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\faigb\AppData\Local\Temp\surefire10724700119387626515\surefirebooter-20260921185611445_3.jar C:\Users\faigb\AppData\Local\Temp\surefire10724700119387626515 2026-09-21T18-56-11_345-jvmRun1 surefire-20260921185611445_1tmp surefire_0-20260921185611445_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\faigb\OneDrive\Documents\repos\java-class\Assigment\flooringMastery\target\test-classes;C:\Users\faigb\OneDrive\Documents\repos\java-class\Assigment\flooringMastery\target\classes;C:\Users\faigb\.m2\repository\org\springframework\spring-context\6.2.11\spring-context-6.2.11.jar;C:\Users\faigb\.m2\repository\org\springframework\spring-aop\6.2.11\spring-aop-6.2.11.jar;C:\Users\faigb\.m2\repository\org\springframework\spring-beans\6.2.11\spring-beans-6.2.11.jar;C:\Users\faigb\.m2\repository\org\springframework\spring-core\6.2.11\spring-core-6.2.11.jar;C:\Users\faigb\.m2\repository\org\springframework\spring-jcl\6.2.11\spring-jcl-6.2.11.jar;C:\Users\faigb\.m2\repository\org\springframework\spring-expression\6.2.11\spring-expression-6.2.11.jar;C:\Users\faigb\.m2\repository\io\micrometer\micrometer-observation\1.14.11\micrometer-observation-1.14.11.jar;C:\Users\faigb\.m2\repository\io\micrometer\micrometer-commons\1.14.11\micrometer-commons-1.14.11.jar;C:\Users\faigb\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.3\junit-jupiter-5.14.3.jar;C:\Users\faigb\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.3\junit-jupiter-api-5.14.3.jar;C:\Users\faigb\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\faigb\.m2\repository\org\junit\platform\junit-platform-commons\1.14.3\junit-platform-commons-1.14.3.jar;C:\Users\faigb\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\faigb\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.3\junit-jupiter-params-5.14.3.jar;C:\Users\faigb\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.3\junit-jupiter-engine-5.14.3.jar;C:\Users\faigb\.m2\repository\org\junit\platform\junit-platform-engine\1.14.3\junit-platform-engine-1.14.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\faigb\AppData\Local\Temp\surefire10304531549501070930\surefirebooter-20260920122233524_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\faigb\AppData\Local\Temp\surefire10724700119387626515\surefirebooter-20260921185611445_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26.0.2+10-55"/>
@@ -64,10 +64,10 @@
     <property name="maven.repo.local" value="C:\Users\faigb\.m2\repository"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testBlankCustomerName" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.009"/>
-  <testcase name="testInvalidProduct" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.004"/>
-  <testcase name="testOrderDateNotInFuture" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.001"/>
+  <testcase name="testBlankCustomerName" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.008"/>
+  <testcase name="testInvalidProduct" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.003"/>
+  <testcase name="testOrderDateNotInFuture" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.0"/>
   <testcase name="testAreaTooSmall" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.001"/>
-  <testcase name="testValidOrder" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.002"/>
-  <testcase name="testInvalidState" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.001"/>
+  <testcase name="testValidOrder" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.003"/>
+  <testcase name="testInvalidState" classname="flooring.service.FlooringMasteryServiceLayerTest" time="0.002"/>
 </testsuite>

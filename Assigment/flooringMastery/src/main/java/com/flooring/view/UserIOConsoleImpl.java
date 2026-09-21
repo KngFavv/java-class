@@ -18,7 +18,13 @@ public class UserIOConsoleImpl implements UserIO {
 
     @Override
     public int readInt(String prompt) {
-        print(prompt);
-        return Integer.parseInt(scanner.nextLine());
+        while (true) {
+            try {
+                print(prompt);
+                return Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                print("Invalid input. Please enter a number.");
+            }
+        }
     }
 }

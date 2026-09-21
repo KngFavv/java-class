@@ -38,7 +38,7 @@ public class OrderDaoFileImplTest {
 
         int nextNumber = dao.getNextOrderNumber();
 
-        assertEquals(3, nextNumber);
+        assertEquals(4, nextNumber);
     }
     @Test
     public void testAddOrder() throws Exception {

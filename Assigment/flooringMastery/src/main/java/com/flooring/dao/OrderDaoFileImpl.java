@@ -19,7 +19,7 @@ public class OrderDaoFileImpl implements OrderDao {
         orders = new HashMap<>();
     }
     private String getOrderFileName(LocalDate date) {
-        return "Data/Orders_" + date.format(DateTimeFormatter.ofPattern("MMddyyyy")) + ".txt";
+        return "Data/Orders/Orders_" + date.format(DateTimeFormatter.ofPattern("MMddyyyy")) + ".txt";
     }
     private void writeFile() throws FlooringMasteryPersistenceException {
         try {
@@ -72,7 +72,11 @@ public class OrderDaoFileImpl implements OrderDao {
             throws FlooringMasteryPersistenceException {
         try {
             PrintWriter out = new PrintWriter(
-                    new FileWriter("Data/Backup.txt"));
+                    new FileWriter("Data/Backup/Backup.txt"));
+
+            out.println("OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total,OrderDate");
+
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy");
 
             for (Order order : orders.values()) {
                 out.println(
@@ -87,7 +91,8 @@ public class OrderDaoFileImpl implements OrderDao {
                                 + order.getMaterialCost().setScale(2, RoundingMode.HALF_UP) + DELIMITER
                                 + order.getLaborCost().setScale(2, RoundingMode.HALF_UP) + DELIMITER
                                 + order.getTax().setScale(2, RoundingMode.HALF_UP) + DELIMITER
-                                + order.getTotal().setScale(2, RoundingMode.HALF_UP)
+                                + order.getTotal().setScale(2, RoundingMode.HALF_UP) + DELIMITER
+                                + order.getOrderDate().format(formatter)
                 );
             }
 
@@ -101,7 +106,7 @@ public class OrderDaoFileImpl implements OrderDao {
 
     }
     private void loadAllFiles() throws FlooringMasteryPersistenceException {
-        File folder = new File("Data");
+        File folder = new File("Data/Orders");
 
         File[] files = folder.listFiles();
 
@@ -109,8 +114,17 @@ public class OrderDaoFileImpl implements OrderDao {
             for (File file : files) {
                 if (file.getName().startsWith("Orders_")
                         && file.getName().endsWith(".txt")) {
-
                     loadOrdersFromFile(file);
+
+                    String fileName = file.getName();
+
+                    String dateText = fileName.substring(7, 15);
+
+                    LocalDate date = LocalDate.parse(dateText, DateTimeFormatter.ofPattern("MMddyyyy"));
+
+                    for (Order order : orders.values()) {
+                        order.setOrderDate(date);
+                    }
                 }
             }
         }
